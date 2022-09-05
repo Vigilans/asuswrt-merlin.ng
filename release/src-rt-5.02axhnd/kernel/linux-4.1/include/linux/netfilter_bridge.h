@@ -19,6 +19,7 @@ enum nf_br_hook_priorities {
 
 #define BRNF_BRIDGED_DNAT		0x02
 #define BRNF_NF_BRIDGE_PREROUTING	0x08
+#define HAVE_NF_BRIDGE_GET_PHYSDEV
 
 static inline unsigned int nf_bridge_mtu_reduction(const struct sk_buff *skb)
 {
